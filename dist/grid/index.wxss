@@ -1,0 +1,3 @@
+.i-grid{
+  border-top:1rpx solid #cdcdcd;
+  overflow:hidden}

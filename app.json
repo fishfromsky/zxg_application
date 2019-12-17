@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/lanya/lanya",
+    "pages/consume/consume",
+    "pages/complain/complain",
+    "pages/ticket/ticket",
+    "pages/application/application",
+    "pages/repair/repair",
+    "pages/login/login",
+    "pages/advertisement/advertisement",
+    "pages/equipment/equipment",
+    "pages/join/join",
+    "pages/question/question"
+  ],
+  "usingComponents": {
+    "i-grid": "./dist/grid/index",
+    "i-grid-item": "./dist/grid-item/index",
+    "i-grid-icon": "./dist/grid-icon/index",
+    "i-grid-label": "./dist/grid-label/index",
+    "i-card":"./dist/card/index",
+    "i-checkbox-group": "./dist/checkbox-group/index",
+    "i-checkbox": "./dist/checkbox/index",
+    "i-radio-group": "./dist/radio-group/index",
+    "i-radio": "./dist/radio/index",
+    "i-panel": "./dist/panel/index",
+    "i-input": "./dist/input/index",
+    "i-input-number": "../../dist/input-number/index",
+    "i-divider": "../../dist/divider/index",
+    "i-collapse": "../../dist/collapse/index",
+    "i-collapse-item": "../../dist/collapse-item/index"
+  },
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#00bfff",
+    "navigationBarTitleText": "CubicBLE",
+    "backgroundColor": "#ffffff",
+    "enablePullDownRefresh": false,
+    "backgroundTextStyle": "dark"
+  },
+  "sitemapLocation": "sitemap.json",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置将用于地图显示"
+    }
+  }
+}

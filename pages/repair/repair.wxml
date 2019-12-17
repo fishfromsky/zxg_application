@@ -1,0 +1,51 @@
+<view style='margin-top:20rpx'>
+  <text style='font-size:35rpx'>请扫描故障设备二维码</text>
+</view>
+<button class='Saoma' bindtap='Saoma'>扫描故障设备二维码</button>
+<view wx:if='{{SaomaSuccess}}'>
+  <text class='text3'>已成功获得设备信息</text>
+</view>
+<view style='margin-top:20rpx;'>
+  <text style='font-size:35rpx'>请选择设备具体故障</text>
+</view>
+<view class='box1'>
+  <view class='toast1' style='background-color:{{MachineColor}}' bindtap='Machine'>
+    <image src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/machine.png?sign=80ab263d692007bdf98f4b317eb41d0c&t=1564197083' class='picture' style='width:100rpx;height:100rpx'></image>
+    <text class='text1' style='margin-bottom:40rpx'>无法换套</text>
+  </view>
+  <view class='toast1' style='background-color:{{LightColor}}' bindtap='Lightbulb'>
+    <image src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/lightbulb.png?sign=08bcef1a3ed4da3379946727f9a9a08f&t=1564197117' class='picture'></image>
+    <text class='text1'>夜灯故障</text>
+  </view>
+  <view class='toast1' style='background-color:{{WenduColor}}' bindtap='Temperature'>
+    <image src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/wendu.png?sign=1048a4ca0b6f75884bfddfd740f1b412&t=1564197144' class='picture'></image>
+    <text class='text1'>温度故障</text>
+  </view>
+</view>
+<view class='box1'>
+  <view class='toast1' style='background-color:{{LanyaColor}}' bindtap='Lanya'>
+    <image src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/lanya.png?sign=68108d8d3d18e06d5a13305c7fcfb323&t=1564197186' class='picture'></image>
+    <text class='text1'>蓝牙故障</text>
+  </view>
+  <view class='toast1' bindtap='Destroy' style='background-color:{{ShebeiColor}}'>
+    <image src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/matong1.png?sign=6a8a3490a41aa330c23685a5d54ed1db&t=1564197221' class='picture'></image>
+    <text class='text1'>设备损坏</text>
+  </view>
+   <view class='toast1' style='background-color:{{QuantaoColor}}' bindtap='Qita'>
+    <image src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/qita.png?sign=be8377c779334ea2718c1e4177a0a3e2&t=1564197270' class='picture'></image>
+    <text class='text1'>其他</text>
+  </view>
+</view>
+<view wx:if='{{ShowText}}' class='box3'>
+  <view style='display:flex;flex-direction:row'>
+    <view class='Camera' bindtap='Camera'>
+      <image src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/paizhao.png?sign=19b51c5bef3b3afe88dd9fcdc01fcb24&t=1564197394' class='paizhao'></image>
+    </view>
+    <image src='{{src}}' mode='aspectFit' style='width:100rpx;height:100rpx;margin-left:20rpx' bindtap='ShowPicture'></image>
+  </view>
+  <view style='margin-top:20rpx'>
+    <textarea class='textarea' placeholder='请描述具体故障' placeholder-style='font-size:35rpx' bindinput="TextInput"></textarea>
+  </view>
+</view>
+<button class='button1' bindtap='Submit'>提交</button>
+

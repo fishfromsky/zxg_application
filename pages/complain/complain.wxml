@@ -1,0 +1,48 @@
+<view class="userinfo">
+  <image bindtap="bindViewTap" class="userinfo-avatar" src="{{src}}" mode="cover"></image>
+  <text class="userinfo-nickname">{{nickname}}</text>
+</view>
+<view class='box1'>
+  <text class='title'>请选择您的投诉类型</text>
+</view>
+<view wx:if='{{ShowCard1}}'>
+  <view class='box animation-slide-left'  style='background-color:#66CCFF' bindtap='Shebei'>
+    <view class='container1'>
+      <image class='picture' src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/xitongguzhang.png?sign=46a817920bfcbab548b7bcb608efdc97&t=1564195642'></image>
+      <text class='text1'>设备故障</text>
+    </view>
+    <text class='text2'>电机卡壳、夜灯损坏、无法升温...</text>
+  </view>
+</view>
+<view wx:if='{{ShowCard2}}'>
+  <view class='box animation-slide-left' bindtap='Zhifu' style='background-color:#66CCFF'>
+    <view class='container1'>
+      <image class='picture' src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/zhifu.png?sign=584f3c75542aeb4315974aea9b85e775&t=1564195683'></image>
+      <text class='text1'>支付故障</text>
+    </view>
+    <text class='text2'>无法支付、扣款异常...</text>
+  </view>
+</view>
+<view wx:if='{{ShowCard3}}'>
+  <view class='box animation-slide-left' bindtap='Exception' style='background-color:#66CCFF'>
+    <view class='container1'>
+      <image class='picture' src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/qita.png?sign=c06ed5d133c33b8bc4c5e82a99530c05&t=1564195738'></image>
+      <text class='text1'>其他原因</text>
+    </view>
+    <text class='text2'>敬请您向我们提供宝贵意见</text>
+  </view>
+</view>
+<view wx:if='{{ShowModel}}' class="cu-modal show animation-scale-down">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-maincolor justify-end">
+      <view class="content">请输入您的投诉信息</view>
+    </view>
+    <textarea class='toast-input' placeholder="请输入投诉信息" bindinput="SetValue"></textarea>
+    <view class="cu-bar bg-white justify-end">
+      <view class="action">
+        <button class="cu-btn line-green text-green" bindtap="Cancel">取消</button>
+        <button class="cu-btn bg-green margin-left" bindtap="Confrim">确定</button>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,48 @@
+<map id='Mymap' class='Mymap' longitude='{{Longitude}}' latitude='{{Latitude}}' markers='{{Markers}}' include-points='{{markers}}' bindmarkertap='Markertap' show-location>
+  <cover-view wx:if='{{AdverStatus}}' class='Adverbox' bindtap='Advertisement'>
+      <cover-image class='gift' src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/gift.png?sign=e6a42bee4c77b3f6c36e8b1a0875d997&t=1564196369'></cover-image>
+      <cover-view class='advertisetext'>{{AdvertiseTitle}}</cover-view>
+      <cover-image class='navigate' src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/right.png?sign=1f2d666af1e17ea6ec9094aabffe2934&t=1564196409'></cover-image>
+  </cover-view>
+  <cover-view class='Scan'>
+    <cover-view class='bg-maincolor scanbox' bindtap='Scanning'>
+      <cover-image src="https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/saoma.png?sign=7d74be3448e3333cb6708aee364879dd&t=1564196474" class="ScanIcon"></cover-image>
+      <cover-view class="scantext">扫码立享</cover-view>
+    </cover-view>
+  </cover-view>
+  <cover-view class='commodity-screen' bindtap='HideModel' wx:if='{{ShowModelStatus}}'></cover-view>
+  <cover-view class='commodity-attr-box' animation='{{AnimationData}}' wx:if='{{ShowModelStatus}}'>
+    <cover-view class='place-box'>
+      <cover-view class='placeViewLt'>
+        <cover-view class='ViewTitle1'>{{PlaceName}}</cover-view>
+        <cover-view class='ViewTitle2'>{{PlaceAddress}}</cover-view>
+      </cover-view>
+      <cover-view class='placeViewRt'>
+          <cover-image bindtap='OpenDetail' src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/detail.png?sign=66ac23495df619c9b1f8ded23b81e28f&t=1564196535' class="detail"></cover-image>
+      </cover-view>
+    </cover-view>
+    <cover-view class='iconView'>
+      <cover-image class='iconImage0' src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/icon-time.png?sign=0c7c2263728279ef72e25120c7096b77&t=1564196574'></cover-image>
+      <cover-view class='TimeText'>{{Time}}</cover-view>
+      <cover-image class='iconImage1' bindtap='Calling' src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/phone.png?sign=4459a4a02a79d662721d64402df97cd7&t=1564196603'></cover-image>
+      <cover-view class='TimeText1' bindtap='Calling'>电话</cover-view>
+      <cover-image class='iconImage2' bindtap='Navigation' src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/address.png?sign=e0660f816ccfbd4bb00234c8f509d9ca&t=1564196649'></cover-image>
+      <cover-view class='TimeText1' bindtap='Navigation'>导航</cover-view>
+    </cover-view>
+  </cover-view>
+  <cover-image class='mine' src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/mine.png?sign=4c9764ff8200d10456e093539323944e&t=1564196722' bindtap='ShowView'></cover-image>
+  <cover-image class='Relocate' bindtap='Relocate' src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/Locate.png?sign=99fb3e593f35815817cc3e5edeafab04&t=1564196773'></cover-image>
+  <cover-view wx:if='{{AdverWindow}}' class='toastbox'>
+    <cover-view class='bg'></cover-view>
+    <cover-view class='showtoast'>
+      <cover-image class='disney' src='{{AdvertiseSrc}}' bindtap='Advertisement'></cover-image>
+      <cover-view class='toast-title' bindtap='Advertisement'>
+        <cover-view class='titletext'>{{AdvertiseTitle}}</cover-view>
+        <cover-view class='button'>
+          <cover-view class='titletext1'>点击查看详情</cover-view>
+        </cover-view>
+      </cover-view>
+      <cover-image class='cancel' src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/cancel.png?sign=85651bb225c4c36f0a472d245c3a879b&t=1564196822' bindtap='CancelWindow'></cover-image>
+    </cover-view>
+  </cover-view>
+</map>

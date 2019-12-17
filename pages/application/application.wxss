@@ -1,0 +1,38 @@
+page{
+  background-color: #efefef;
+}
+.radio-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100rpx;
+}
+.table2{
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  justify-content: space-between;
+  align-items: cneter;
+}
+.text1{
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+}
+.text2{
+  color: #ffa500;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+}
+.Send{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50rpx;
+}
+.Sending{
+  width: 95%;
+  background-color: #333333;
+  color: white;
+  border-radius: 0px;
+}

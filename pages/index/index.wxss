@@ -1,0 +1,337 @@
+@import '../../main.wxss';
+.Mymap{
+  width: 100%;
+  height: 100vh
+}
+.commodity-screen{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff
+}
+.commodity-attr-box{
+  height: 350rpx;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+}
+.place-box{
+  width: 100%;
+  height: 220rpx
+}
+.placeViewLt{
+  display: inline-block;
+  width: 620rpx;
+  margin-top: 50rpx
+}
+.ViewTitle1{
+  display: block;
+  white-space: pre-line;
+  font-family: '黑体';
+  font-size: 50rpx;
+  color: #3F51B5;
+  margin-left: 20rpx;
+  padding-top: 5rpx
+}
+.ViewTitle2{
+  display: block;
+  font-size: 30rpx;
+  color: gray;
+  margin: 20rpx;
+  white-space: pre-line
+}
+.placeViewRt{
+  display: inline-block;
+  width: 120rpx;
+  height: 140rpx;
+  margin-bottom: 20rpx;
+}
+.iconView{
+  display: block;
+  height: 100rpx;
+  width: 100%;
+  border-top: 1px solid grey;
+  padding-top: 40rpx
+}
+
+.iconImage1{
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 90rpx;
+  vertical-align: middle
+}
+.ScanIcon{
+  width: 70rpx;
+  height: 70rpx;
+  display: inline-block
+}
+.scantext{
+  font-size: 15px;
+  margin-left: 10rpx
+}
+.scanbox{
+  width: 40%;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px
+}
+.iconImage2{
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+  vertical-align: middle
+}
+.TimeText1{
+  display: inline-block;
+  line-height: 45rpx;
+  width: 100rpx;
+  height: 45rpx;
+  color: #3f51b5;
+  margin-left: 10rpx;
+  font-size: 24rpx
+}
+.iconImage0{
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 40rpx;
+  vertical-align: middle
+}
+.TimeText{
+  display: inline-block;
+  line-height: 45rpx;
+  margin-left: 12rpx;
+  text-align: center;
+  width: 250rpx;
+  height: 45rpx;
+  background-color: rgb(230, 234, 255);
+  border-radius: 10px;
+  color: #3F51B5;
+  font-size: 24rpx;
+}
+.Scan{
+  position: absolute;
+  bottom: 100rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.iconScan{
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+}
+.MineIcon{
+  position: absolute;
+  top: 50rpx;
+}
+.mine{
+  position: absolute;
+  width: 80rpx;
+  height: 80rpx;
+  bottom: 100rpx;
+  margin-left: 85%;
+}
+.bg{
+  width: 40%;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff
+}
+.menu{
+  height: 100%;
+  position: fixed;
+  width: 60%;
+  background-color: white;
+  z-index: 2000;
+  overflow: hidden;
+}
+.option{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px grey solid;
+  height: 80rpx;
+  align-items: center;
+  margin-top: 50rpx;
+}
+.icon1{
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+}
+.text1{
+  margin-left: 20rpx;
+}
+.userinfo-avatar{
+  width: 128rpx;
+  height: 128rpx;
+  margin-top: 30rpx;
+  border-radius: 50%;
+  align-content: center;
+}
+.userinfo-nickname{
+  margin-top: 50rpx;
+  color: #aaa;
+}
+.Info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.option2{
+  position: absolute; 
+  height: 80rpx;
+  margin-left: 10%;
+  bottom: 0rpx;
+}
+.Relocate{
+  position: absolute;
+  width: 80rpx;
+  height: 80rpx;
+  bottom: 100rpx;
+  margin-left: 50rpx;
+}
+.gift{
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 10rpx;
+}
+.advertisetext{
+  font-size: 40rpx;
+  font-family: '微软雅黑';
+  color: white
+}
+.navigate{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 5rpx;
+}
+.toastbox{
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+}
+.bg{
+  width: 100%;
+  min-height: 100vh;
+  opacity: 0.5;
+  background-color: black;
+  position: absolute
+}
+.showtoast{
+  position: absolute;
+  opacity: 1;
+  margin-left: 10%;
+  margin-top: 10%;
+  width: 80%;
+  z-index: 1000
+}
+.disney{
+  width: 100%;
+  height:20%;
+}
+.toast-title{
+  width: 100%;
+  background-color: #ffccff;
+}
+.titletext{
+  display: block;
+  white-space: pre-line;
+  margin-top: 30rpx;
+  font-size: 20px;
+  text-align: center;
+  color: #9900ff;
+}
+.button{
+  margin-top: 30rpx;
+  border: #cc0033 1px solid;
+  border-radius: 50px;
+  width: 60%;
+  background-color: #cc0033;
+  color: white;
+  margin-bottom: 30rpx;
+  margin-left: 20%
+}
+.titletext1{
+  text-align: center;
+  font-size: 35rpx;
+  font-family: '微软雅黑'
+}
+.cancel{
+  width: 70rpx;
+  height: 70rpx;
+  z-index: 1000;
+  margin-left: 45%;
+  margin-top: 70rpx;
+}
+.Adverbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 90%;
+  height: 130rpx;
+  margin-top: 40rpx;
+  margin-left: 5%;
+  background-color: #00bfff
+}
+.detail-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.detail{
+  display: block;
+  width: 120rpx;
+  height: 120rpx;
+}
+.BlueWindow{
+  position: absolute;
+  width: 100rpx;
+  height: 100rpx;
+  margin-left: 80%;
+  bottom: 250rpx;
+  background-color: #FF0099;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  padding: 0px
+}
+.BlueText{
+  display: block;
+  white-space: pre-line;
+  font-size: 13px;
+  color: white
+}

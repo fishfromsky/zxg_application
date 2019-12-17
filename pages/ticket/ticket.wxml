@@ -1,0 +1,25 @@
+<view wx:if='{{ShowNotList}}'>
+  <i-divider content='您暂时还没有可开具发票的消费哦' lineContent='#cdcdcd'></i-divider>
+</view>
+<view wx:else>
+  <scroll-view class='contain'>
+    <view style='margin:30rpx' wx:for='{{Record}}' wx:key='{{item}}'>
+      <view class='contanier'>
+        <i-checkbox value='{{item.id}}' checked='{{item.checked}}' bindchange='Fapiao'></i-checkbox>
+        <i-card title='{{item.location}}' extra='{{item.consumption_amount}}'>
+          <view slot='content'>{{item.date}}</view>
+        </i-card>
+      </view>
+    </view>
+  </scroll-view>
+  <view class='container1'>
+    <view class='table1'>
+      <text class='text1'>您已选中消费</text>
+      <text class='text2'>{{Count}}</text>
+    </view>
+    <view class='table2'>
+      <i-radio value='是否全选' bindchange='AllSelect' checked='{{AllSelectStatus}}'></i-radio>
+      <button bindtap='Confrim' class='Confrim'>去提交</button>
+    </view>
+  </view>
+</view>

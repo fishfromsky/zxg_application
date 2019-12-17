@@ -1,0 +1,29 @@
+<!--index.wxml-->
+<view class="userinfo">
+  <image class="userinfo-avatar" src="{{src}}"></image>
+  <text class="userinfo-nickname">{{nickname}}</text>
+</view>
+<view class="bg-blue">
+  <image src="https://image.weilanwl.com/gif/wave.gif" mode="scaleToFill" class="gif-black response" style="height:100rpx"></image>
+</view>
+<view wx:if='{{NotXiaofei}}'>
+  <i-divider content='您暂时还没有消费记录哦' lineColor='#cdcdcd'></i-divider>
+</view>
+<view wx:else>
+  <view>
+    <view class='container1'>
+      <view class='title' style='margin-left:60rpx'>日期</view>
+      <view class='title' style='margin-left:60rpx'>消费</view>
+      <view class='title' style='margin-right:45rpx'>支付状态</view>
+    </view>
+    <view class='container3' wx:for='{{Xiaofei}}' wx:key='{{items}}'>
+      <view class='container1'>
+        <view class='container2'>{{item.date}}</view>
+        <view class='container2'>{{item.consumption_amount}}</view>
+        <view class='container2' wx:if="{{item.pay_or_not=='0'}}"><button disabled="{{PayStatus}}" class='zhifu' bindtap='payTap' data-consumption_amount="{{item.consumption_amount}}">去支付</button></view>
+        <view class='container2' wx:else>已支付</view>
+      </view>
+      <view class='container4'>{{item.date}}</view>
+    </view>
+  </view>
+</view>

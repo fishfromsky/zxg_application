@@ -1,0 +1,69 @@
+.Saoma{
+  margin-top: 20rpx;
+  width: 90%;
+  background-color: #333333;
+  color: white;
+  border-radius: 0px;
+}
+.box1{
+  display: flex;
+  flex-direction: row;
+}
+.toast1{
+  width: 33.3%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box2{
+  display: flex;
+  flex-direction: row;
+}
+.picture{
+  width:80rpx;
+  height: 80rpx;
+  margin-top: 20rpx;
+}
+.text1{
+  font-size: 35rpx;
+  margin-top: 17rpx;
+  margin-bottom: 10rpx;
+}
+.box3{
+  margin-top:20rpx;
+}
+.Camera{
+  width: 100rpx;
+  height: 100rpx;
+  border: grey 1px dotted;
+  margin-left: 50rpx;
+}
+.paizhao{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+.textarea{
+  width: 90%;
+  margin-left: 5%;
+  height: 200rpx;
+  border: 1px grey solid;
+}
+.button1{
+  margin-top: 40rpx;
+  background-color: #333333;
+  color: white;
+  width: 90%;
+  border-radius: 0px;
+}
+.picture{
+  display: flex;
+  flex-direction: row;
+}
+.text3{
+  margin-left: 25%;
+  font-size: 40rpx;
+  color: red;
+}

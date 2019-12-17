@@ -1,0 +1,49 @@
+.contain{
+  width: 100%;
+  margin-bottom: 200rpx;
+}
+.container1{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+}
+.table1{
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-top: 1px grey solid
+}
+.text1{
+  font-size: 25rpx;
+  margin-left: 20rpx;
+}
+.text2{
+  font-size: 25rpx;
+  color: #ffa500;
+  margin-right: 20rpx;
+}
+.table2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 150rpx;
+  background-color: white;
+  border-top: 1px grey solid;
+}
+.Confrim{
+  width: 250rpx;
+  height: 100rpx;
+  border-radius: 0rpx;
+  background-color: #333333;
+  color: white;
+  margin-top: 10rpx;
+  margin-right: 50rpx;
+}

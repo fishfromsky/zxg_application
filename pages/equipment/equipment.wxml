@@ -1,0 +1,20 @@
+<view class="welcome">
+  <text class="welcometext1">欢迎{{Username}}来到</text>
+  <text class="welcometext2">{{LocationName}}</text>
+</view>
+<view class="bg-blue">
+  <image src="https://image.weilanwl.com/gif/wave.gif" mode="scaleToFill" class="gif-black response" style="height:100rpx"></image>
+</view>
+<view wx:if='{{IsNone}}'>
+ <i-divider content='该地点尚未安装任何设备哦，尽情期待' lineContent='#cdcdcd'></i-divider>
+</view>
+<view wx:else>
+  <view wx:if='{{ShowCard}}' wx:for='{{LocationNumber}}' wx:key='{{item}}'>
+    <view class="card animation-slide-left" type="animation-delay: {{(item+1)*0.5}}s">
+      <view class="ViewRt">
+        <view class="address">{{item.address}}</view>
+      </view>
+      <text class="ViewLt">该地点设备数量：{{item.number}}台</text>
+    </view>
+  </view>
+</view>

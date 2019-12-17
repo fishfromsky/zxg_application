@@ -1,0 +1,28 @@
+<i-panel title='填写发票详情'>
+  <radio-group bindchange='RadioChange' class='radio-group'>
+    <radio style='margin-left:30rpx;margin-top:20rpx' value='Company' checked='{{CompanyStatus}}' color='#2d8cf0'>企业单位</radio>
+    <radio style='margin-right:30rpx;margin-top:20rpx' value='Person' checked='{{SinglePerson}}' color='#2d8cf0'>非企业单位/个人</radio>
+  </radio-group>
+  <i-input title='发票抬头' placeholder='填写发票抬头' bindchange='FapiaoTaitou'/>
+  <view wx:if='{{CompanyStatus}}'>
+    <i-input title='税号' placeholder='填写纳税人识别税号' bindchange='Shuihao'/>
+  </view>
+  <i-input title='更多内容' placeholder='填写备注，地址等（非必填)' bindchange='More'/>
+</i-panel>
+<i-panel title='发票金额'>
+  <view class='table2'>
+    <text class='text1'>总金额</text>
+    <text class='text2'>{{Money}}</text>
+  </view>
+</i-panel>
+<i-panel title='地址信息(快递费到付)'>
+  <i-input title='电子邮件' placeholder='用于向您发送电子发票' bindchange='Email'/>
+  <i-input title='电话号码' placeholder='填写您的电话联系方式' bindchange='Phone'/>
+  <i-input title='邮政编码' placeholder="请输入您所在地的邮政编码" bindchange='Number'/>
+  <i-input title='所在省市区' placeholder="请输入您所在的省市区" bindchange='City'/>
+  <i-input title='具体邮寄地址' placeholder='请填写您的邮政地址' bindchange='Post'/>
+</i-panel>
+<view class='Send'>
+  <button class='Sending' bindtap='Sending'>提交</button>
+</view>
+

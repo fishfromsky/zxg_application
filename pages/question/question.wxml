@@ -1,0 +1,22 @@
+<scroll-view scroll-y class="DrawerPage {{modalName=='viewModal'?'show':''}}">
+  <view wx:if='{{ShowCard}}'> 
+    <scroll-view style='margin-top:50rpx' scroll-y class="scrollPage">
+      <view class='nav-list'>
+        <view bindtap="ShowModel" class="nav-li bg-cyan animation-scale-up" data-target="viewModal" data-content="{{item.content}}" wx:for="{{Question}}" style="animation-delay: {{(index+1)*0.2}}s" wx:key='{{index}}'>
+          <view class="nav-title">{{item.title}}</view>
+          <view class="nav-name">Question</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</scroll-view>
+<view class="DrawerClose {{modalName=='viewModal'?'show':''}}" bindtap="HideModel">
+<text class="cuIcon-pullright"></text>
+</view>
+<scroll-view scroll-y class="DrawerWindow {{modalName=='viewModal'?'show':''}}">
+<view class="margin-top-xl margin-bottom-xl shadow-lg">
+  <view class="Textarea">
+    <view class="text">{{QuestionContent}}</view>
+  </view>
+</view>
+</scroll-view>

@@ -1,0 +1,55 @@
+<swiper class="card-swiper round-dot" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" indicator-color="#8799a3" bindchange="cardSwiper" indicator-active-color="#0081ff">
+  <swiper-item wx:for="{{swiperList}}" wx:key class="{{cardCur==index?'cur':''}}">
+    <view class="swiper-item" bindtap="Transfer">
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </view>
+  </swiper-item>
+</swiper>
+<view class='title' style='font-size:35px'>欢迎使用智小盖</view>
+<view>
+  <i-grid style="text-align:center">
+    <i-grid-item bindtap='YedengSwicth'>
+      <image class='picture' src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/yedeng.png?sign=5603a429950dd50290aa6a9e2a157fa3&t=1564196896'></image>
+      <i-grid-label>夜灯</i-grid-label>
+    </i-grid-item>
+    <i-grid-item bindtap='SendDataHuantao'>
+      <image class='picture' src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/matong.png?sign=c5d604a96cf73d80de7437a01a76755e&t=1564196924'></image>
+      <i-grid-label>换圈</i-grid-label>
+    </i-grid-item>
+    <i-grid-item bindtap='SendDataChuchou'>
+      <image class='picture' src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/fengshan.png?sign=fffadb9088ce8570465eb58590a2661a&t=1564196956'></image>
+      <i-grid-label>除臭</i-grid-label>
+    </i-grid-item>
+  </i-grid>
+</view>
+<button class="EndUse" bindtap="EndUse">结束使用</button>
+<view class='toast-box' wx:if='{{WenduStatus}}'>
+  <view class='toastbg'></view>
+  <view class='ShowToast'>
+    <view class='toast-title'>
+      <text>调节您想要的温度</text>
+    </view>
+    <view class='ToastMain'>
+      <view class='Adjust'>
+        <button class='button3' bindtap='NoWendu'>常温</button>
+        <button class='button4' bindtap='WenduChange'>升温</button>
+      </view>
+      <view wx:if='{{Wendu}}'>
+        <i-input-number style='margin-top:20rpx' value='{{Value}}' min='32' max='42' step='2' bindchange='WenduAdjust'></i-input-number>
+        <view class='Wendu1'>
+          <text class='text1'>当前选择温度</text>
+          <text class='text2'>{{Value}}</text>
+        </view>
+      </view>
+      <view class='toast-button'>
+        <view class='button1'>
+          <button catchtap='Cancel'>取消</button>
+        </view>
+        <view class='button2'>
+          <button catchtap='Confrim'>确认</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

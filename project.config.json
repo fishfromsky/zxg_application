@@ -1,0 +1,92 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"uglifyFileName": true,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.8.3",
+	"appid": "wx6a4b8ed9187d289b",
+	"projectname": "Mydemo",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "scan1",
+					"pathName": "pages/index/index",
+					"query": "scene=0C:B2:B7:2C:86:58",
+					"scene": 1047
+				},
+				{
+					"id": 1,
+					"name": "scan",
+					"pathName": "pages/index/index",
+					"query": "scene=0C:B2:B7:2C:86:7B",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "scan2",
+					"pathName": "pages/index/index",
+					"query": "scene=BA:03:50:5A:B2:3D",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "scan4",
+					"pathName": "pages/index/index",
+					"query": "scene=90:E2:02:30:79:23",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "最新",
+					"pathName": "pages/index/index",
+					"query": "scene=44:EA:D8:57:BA:29",
+					"scene": null
+				}
+			]
+		}
+	}
+}

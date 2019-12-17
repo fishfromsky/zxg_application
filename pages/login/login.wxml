@@ -1,0 +1,18 @@
+<view wx:if='{{ShowLogin}}' class='Login animation-slide-top'>
+  <view wx:if='{{IsLogin}}'>
+    <view class='GetInfo'>
+      <image src='{{src}}' class='MyIcon'></image>
+      <text class='nickname'>{{NickName}},欢迎您</text>
+    </view>
+  </view>
+  <button class='Login1' wx:else open-type='getUserInfo' bindgetuserinfo='GetMyInfo'>点此登录</button>
+</view>
+<view wx:if='{{ShowFunction}}' style="margin-top:70rpx">
+  <view wx:for='{{Function}}' wx:key='{{index}}'>
+    <view class='textTable  animation-slide-bottom' bindtap='{{item.path}}' style="animation-delay: {{(index+1)*0.2}}s">
+      <image class='picture' src='../images/{{item.icon}}'></image>
+      <text class='text'>{{item.name}}</text>
+      <image class='picture1' src='https://7a68-zhixiaogai-e5uyz-1259728659.tcb.qcloud.la/images/right.png?sign=8ca7367c6f28cc3196cab6151891fe62&t=1564197692'></image>
+    </view>
+  </view>
+</view>
